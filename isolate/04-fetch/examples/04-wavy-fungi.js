@@ -12,7 +12,11 @@ const log = labeledLogger('Wavy Fungi');
 const expect = chai.expect;
 
 const origin = window.location.origin;
+<<<<<<< HEAD
 const path = '/isolate/fake-api/animals/fungi.json';
+=======
+const path = '/asynchronous-programming/isolate/04-fetch/fake-api/animals/fungi.json';
+>>>>>>> 02-fetch integrate
 const requestURL = origin + path;
 log("requestURL: ", requestURL);
 
@@ -40,10 +44,17 @@ const handleRejection = (err) => {
 
 
 fetch(requestURL)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => separateWavyFungi(data))
   .then(filteredData => testWavyFungi(filteredData))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(separateWavyFungi)
+  .then(testWavyFungi)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 

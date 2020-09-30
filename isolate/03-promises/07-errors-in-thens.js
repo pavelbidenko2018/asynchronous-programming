@@ -38,9 +38,15 @@ const fiveExecutor = (resolve, reject) => {
   resolve(5);
 };
 const neverLogsFivePromise = new Promise(fiveExecutor)
+<<<<<<< HEAD
   .then(resolved => throwAnError(resolved))
   .then(resolved => logResolvedValue(resolved))
   .catch(err => handleRejection(err));
+=======
+  .then(throwAnError)
+  .then(logResolvedValue)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('error before logging 5:', neverLogsFivePromise);
 
 
@@ -49,9 +55,15 @@ const helloExecutor = (resolve, reject) => {
   resolve('hello');
 };
 const doesLogHelloPromise = new Promise(helloExecutor)
+<<<<<<< HEAD
   .then(resolved => logResolvedValue(resolved))
   .then(resolved => throwAnError(resolved))
   .catch(err => handleRejection(err));
+=======
+  .then(logResolvedValue)
+  .then(throwAnError)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('error after logging "hello":', doesLogHelloPromise);
 
 

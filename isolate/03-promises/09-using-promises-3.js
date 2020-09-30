@@ -57,11 +57,19 @@ const isEvenNumber = (resolvedValue) => {
   return resolvedValue % 2 === 0;
 };
 const isEvenNumberPromise = new Promise(inputEvenNumberExecutor)
+<<<<<<< HEAD
   .then(value => mustBeGreaterThanZero(value))
   .then(resolved => logResolvedValue(resolved))
   .then(number => isEvenNumber(number))
   .then(resolved => alertSuccessFailure(resolved))
   .catch(err => handleRejection(err));
+=======
+  .then(mustBeGreaterThanZero)
+  .then(logResolvedValue)
+  .then(isEvenNumber)
+  .then(alertSuccessFailure)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 console.log('isEvenNumberPromise:', isEvenNumberPromise);
 
 
@@ -81,11 +89,19 @@ const isOddNumber = (resolvedValue) => {
   return resolvedValue % 2 !== 0;
 };
 const isOddNumberPromise = new Promise(inputOddNumberExecutor)
+<<<<<<< HEAD
   .then(value => mustBeGreaterThanZero(value))
   .then(resolved => logResolvedValue(resolved))
   .then(number => isOddNumber(number))
   .then(resolved => alertSuccessFailure(resolved))
   .catch(err => handleRejection(err));
+=======
+  .then(mustBeGreaterThanZero)
+  .then(logResolvedValue)
+  .then(isOddNumber)
+  .then(alertSuccessFailure)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 console.log('isOddNumberPromise:', isOddNumberPromise);
 
 

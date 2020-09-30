@@ -13,6 +13,7 @@ log('path: ', path);
 
 
 const parseResponse = (response) => {
+<<<<<<< HEAD
   log('response: ', response);
   return response.json();
 };
@@ -37,11 +38,39 @@ const testData = (actual) => {
 
 const handleRejection = (err) => {
   log(err);
+=======
+    log('response: ', response);
+    return response.json();
+};
+
+const processData = (data) => {
+    log('data: ', data);
+    // write the rest ...
+    const res = data.filter(item => item.userId === 8).slice(0, 10);
+    return res;
+};
+
+const testData = (actual) => {
+    log('actual: ', actual);
+
+    it('should have 10 posts', () => {
+        expect(actual.length).to.equal(10);
+    });
+    it('all should have userId 8', () => {
+        const allHaveUserId8 = actual.every(post => post.userId === 8);
+        expect(allHaveUserId8).to.be.true;
+    });
+};
+
+const handleRejection = (err) => {
+    log(err);
+>>>>>>> 02-fetch integrate
 };
 
 
 
 fetch(origin + path)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => processData(data))
   .then(processedData => testData(processedData))
@@ -50,3 +79,13 @@ fetch(origin + path)
 
 
 log('end of synchronous tasks');
+=======
+    .then(parseResponse)
+    .then(processData)
+    .then(testData)
+    .catch(handleRejection);
+
+
+
+log('end of synchronous tasks');
+>>>>>>> 02-fetch integrate

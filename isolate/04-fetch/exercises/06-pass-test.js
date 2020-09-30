@@ -8,11 +8,16 @@ const log = labeledLogger('6. Pass Test');
 const expect = chai.expect;
 
 const origin = window.location.origin;
+<<<<<<< HEAD
 const path = _;
+=======
+const path = '/isolate/04-fetch/fake-api/food/wet/soups.json';
+>>>>>>> 02-fetch integrate
 const requestURL = origin + path;
 log("requestURL: ", requestURL);
 
 
+<<<<<<< HEAD
 
 
 const sumNumbers = (data) => {
@@ -49,3 +54,42 @@ const parseResponse = (response) => {
 log('end of synchronous tasks');
 
 
+=======
+const sumNumbers = (data) => {
+    let sum = 0;
+    for (let item in data) {
+        if (data[item] === false) {
+            sum += 1;
+        }
+    }
+    return sum;
+};
+
+const handleRejection = (err) => {
+    log(err);
+};
+
+const testSum = (sum) => {
+    log('sum: ', sum);
+    it('sum should be 3', () => {
+        expect(sum).to.equal(3);
+    });
+};
+
+const parseResponse = (response) => {
+    const parsedResponse = response.json();
+    log('response: ', response, '\n',
+        'parsed: ', parsedResponse);
+    return parsedResponse;
+};
+
+// something is missing ....
+fetch(requestURL)
+    .then(parseResponse)
+    .then(sumNumbers)
+    .then(testSum)
+    .catch(handleRejection);
+
+
+log('end of synchronous tasks');
+>>>>>>> 02-fetch integrate

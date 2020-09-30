@@ -1,11 +1,11 @@
 'use strict';
 
 const closeIt = (paramParent) => {
-  const localParent = "b";
-  return (paramOwn) => {
-    const localOwn = "d";
-    return paramParent + localParent + paramOwn + localOwn;
-  }
+    const localParent = "b";
+    return (paramOwn) => {
+        const localOwn = "d";
+        return paramParent + localParent + paramOwn + localOwn;
+    }
 }
 
 const closure1 = closeIt("a");

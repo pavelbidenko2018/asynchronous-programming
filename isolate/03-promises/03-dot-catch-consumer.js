@@ -36,7 +36,11 @@ const pendingExecutor = (resolve, reject) => {
   log('in pendingExecutor')
 };
 const pendingPromise = new Promise(pendingExecutor)
+<<<<<<< HEAD
   .catch(err => handleRejection(err));
+=======
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('always pending, never settled:', pendingPromise);
 
 
@@ -46,7 +50,11 @@ const resolveExecutor = (resolve, reject) => {
   resolve('settled: resolved');
 };
 const resolvedPromise = new Promise(resolveExecutor)
+<<<<<<< HEAD
   .catch(err => handleRejection(err));
+=======
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('settled: resolved:', resolvedPromise);
 
 
@@ -57,7 +65,11 @@ const rejectExecutor = (resolve, reject) => {
 };
 // this rejection won't be handled until AFTER the callstack is clear
 const rejectedPromise = new Promise(rejectExecutor)
+<<<<<<< HEAD
   .catch(err => handleRejection(err));
+=======
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('settled: rejected (intentional):', rejectedPromise);
 
 
@@ -68,7 +80,11 @@ const errorExecutor = (resolve, reject) => {
 };
 // this rejection won't be handled until AFTER the callstack is clear
 const errorPromise = new Promise(errorExecutor)
+<<<<<<< HEAD
   .catch(err => handleRejection(err));
+=======
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('settled: rejected (by error):', errorPromise);
 
 

@@ -28,34 +28,58 @@ const handleRejection = (err) => {
 const album1Path = '/albums/1';
 const logAlbum1 = logData(album1Path);
 fetch(origin + album1Path)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logAlbum1(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logAlbum1)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 const album4Path = '/albums/4';
 const logAlbum4 = logData(album4Path);
 fetch(origin + album4Path)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logAlbum4(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logAlbum4)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 
 const comment2Path = '/comments/2';
 const logComment2 = logData(comment2Path);
 fetch(origin + comment2Path)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logComment2(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logComment2)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 const comment4Path = '/comments/4';
 const logComment4 = logData(comment4Path);
 fetch(origin + comment4Path)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logComment4(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logComment4)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 

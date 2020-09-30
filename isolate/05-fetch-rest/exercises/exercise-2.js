@@ -5,11 +5,16 @@ const log = labeledLogger('Exercise 2');
 const expect = chai.expect;
 
 const origin = 'https://jsonplaceholder.typicode.com';
+<<<<<<< HEAD
 const path = _;
+=======
+const path = "/photos?albumId=2&id=81";
+>>>>>>> 02-fetch integrate
 log('path: ', path);
 
 
 const parseResponse = (response) => {
+<<<<<<< HEAD
   log('response: ', response);
   return response.json();
 };
@@ -29,11 +34,33 @@ const testData = (data) => {
 
 const handleRejection = (err) => {
   log(err);
+=======
+    log('response: ', response);
+    return response.json();
+};
+
+const testData = (data) => {
+    log('data: ', data[0]);
+    it('should be this photo', () => {
+        expect(data[0]).to.deep.equal({
+            albumId: 2,
+            id: 81,
+            title: 'error magni fugiat dolorem impedit molestiae illo ullam debitis',
+            url: 'https://via.placeholder.com/600/31a74c',
+            thumbnailUrl: 'https://via.placeholder.com/150/31a74c'
+        });
+    });
+};
+
+const handleRejection = (err) => {
+    log(err);
+>>>>>>> 02-fetch integrate
 };
 
 
 
 fetch(origin + path)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => testData(data))
   .catch(err => handleRejection(err));
@@ -41,3 +68,12 @@ fetch(origin + path)
 
 
 log('end of synchronous tasks');
+=======
+    .then(parseResponse)
+    .then(testData)
+    .catch(handleRejection);
+
+
+
+log('end of synchronous tasks');
+>>>>>>> 02-fetch integrate

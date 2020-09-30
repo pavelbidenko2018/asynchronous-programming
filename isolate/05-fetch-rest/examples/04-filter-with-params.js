@@ -31,26 +31,44 @@ const handleRejection = (err) => {
 const usernameSamantha = '/users?username=Samantha';
 const logUsernameSamantha = logData(usernameSamantha);
 fetch(origin + usernameSamantha)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logUsernameSamantha(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logUsernameSamantha)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 
 const postsTitle = '/posts?title=qui%20est%20esse';
 const logPostsTitle = logData(postsTitle);
 fetch(origin + postsTitle)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logPostsTitle(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logPostsTitle)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 const postsId1Id2 = '/posts?id=1&id=2';
 const logPostsId1Id2 = logData(postsId1Id2);
 fetch(origin + postsId1Id2)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logPostsId1Id2(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logPostsId1Id2)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 

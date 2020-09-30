@@ -28,25 +28,43 @@ const handleRejection = (err) => {
 const albumsPath = '/albums';
 const logAlbums = logData(albumsPath);
 fetch(origin + albumsPath)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logAlbums(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logAlbums)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 const postsPath = '/posts';
 const logPosts = logData(postsPath);
 fetch(origin + postsPath)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logPosts(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logPosts)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 const usersPath = '/users';
 const logUsers = logData(usersPath);
 fetch(origin + usersPath)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logUsers(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logUsers)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 

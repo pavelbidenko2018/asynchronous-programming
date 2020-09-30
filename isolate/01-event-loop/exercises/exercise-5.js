@@ -5,13 +5,27 @@ const log = labeledLogger('exercise 5');
 // use setTimeout and .charCodeAt() to sort an array of strings
 //  read items from the unsorted array to the sorted array
 //  you can control the order of the sorted array by using different delays in a setTimeout
+<<<<<<< HEAD
 const sortArray = (unsorted, sorted) => {
+=======
+
+const sortArray = (unsorted = [], sorted) => {
+
+    const temp = unsorted.map(item => item.charCodeAt(item.indexOf(item)))
+        .sort((a, b) => Number(a || 0) - Number(b || 0));
+
+    sorted = temp.map(item => String.fromCharCode(item));
+
+    return sorted;
+
+>>>>>>> 02-fetch integrate
 };
 
 
 // can you figure out why the tests pass in the order they do?
 // is it possible for a test never to finish?
 const testSortAsync = (actual, expected, testId) => {
+<<<<<<< HEAD
   if (actual.length === expected.length) {
     log(testId, 'actual:', actual, "expected:", expected);
     const test1 = actual.toString() === expected.toString();
@@ -20,6 +34,16 @@ const testSortAsync = (actual, expected, testId) => {
     // sorting is not finished, check again later
     setTimeout(testSortAsync, 50, actual, expected, testId);
   }
+=======
+    if (actual.length === expected.length) {
+        log(testId, 'actual:', actual, "expected:", expected);
+        const test1 = actual.toString() === expected.toString();
+        console.assert(test1, testId);
+    } else {
+        // sorting is not finished, check again later
+        setTimeout(testSortAsync, 50, actual, expected, testId);
+    }
+>>>>>>> 02-fetch integrate
 };
 
 const toSort1 = ['ÿ', '!', 'ÿ', '!', 'ÿ'];
@@ -50,5 +74,9 @@ const toSort5 = [';', '}', '+', '{'];
 const actual5 = [];
 const expected5 = ['+', ';', '{', '}'];
 sortArray(toSort5, actual5);
+<<<<<<< HEAD
 testSortAsync(actual5, expected5, 'Test 5');
 
+=======
+testSortAsync(actual5, expected5, 'Test 5');
+>>>>>>> 02-fetch integrate

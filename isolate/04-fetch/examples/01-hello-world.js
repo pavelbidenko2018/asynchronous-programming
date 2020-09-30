@@ -15,7 +15,11 @@
 const log = labeledLogger('Hello World');
 
 const origin = window.location.origin;
+<<<<<<< HEAD
 const path = '/isolate/fake-api/hello.json';
+=======
+const path = '/asynchronous-programming/isolate/04-fetch/fake-api/hello.json';
+>>>>>>> 02-fetch integrate
 const requestURL = origin + path;
 log("requestURL: ", requestURL);
 
@@ -35,9 +39,15 @@ const handleRejection = (err) => {
 
 
 fetch(requestURL)
+<<<<<<< HEAD
   .then(res => parseResponse(res))
   .then(data => logData(data))
   .catch(err => handleRejection(err));
+=======
+  .then(parseResponse)
+  .then(logData)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 
 log('end of synchronous tasks');

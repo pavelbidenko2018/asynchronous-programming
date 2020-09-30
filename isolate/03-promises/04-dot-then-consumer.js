@@ -41,8 +41,13 @@ const resolveExecutor = (resolve, reject) => {
   resolve('settled: resolved');
 };
 const resolvedPromise = new Promise(resolveExecutor)
+<<<<<<< HEAD
   .then(resolved => logResolvedValue(resolved))
   .catch(err => handleRejection(err));
+=======
+  .then(logResolvedValue)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('settled: resolved:', resolvedPromise);
 
 
@@ -52,8 +57,13 @@ const rejectExecutor = (resolve, reject) => {
   reject('settled: rejected');
 };
 const rejectedPromise = new Promise(rejectExecutor)
+<<<<<<< HEAD
   .then(resolved => logResolvedValue(resolved))
   .catch(err => handleRejection(err));
+=======
+  .then(logResolvedValue)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 log('settled: rejected (intentional):', rejectedPromise);
 
 

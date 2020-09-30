@@ -60,11 +60,19 @@ const handleRejection = (err) => {
 
 
 const isValidNumberPromise = new Promise(inputANumberExecutor)
+<<<<<<< HEAD
   .then(value => mustBeGreaterThanZero(value))
   .then(resolved => logResolvedValue(resolved))
   .then(number => isEvenNumber(number))
   .then(resolved => alertSuccessFailure(resolved))
   .catch(err => handleRejection(err));
+=======
+  .then(mustBeGreaterThanZero)
+  .then(logResolvedValue)
+  .then(isEvenNumber)
+  .then(alertSuccessFailure)
+  .catch(handleRejection);
+>>>>>>> 02-fetch integrate
 
 console.log('isValidNumberPromise:', isValidNumberPromise);
 
