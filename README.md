@@ -13,10 +13,6 @@ What makes web development so cool is the ... web.  Being able to build applicat
 
 Enter _asynchronous programming_: writing code that tells your browser to start one task and move on to a new task while you wait for the first to finish.  This is possible because of the _Event Loop_.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 02-fetch integrate
 ## Contents
 
 - [Learning Objectives](#learning-objectives)
@@ -91,11 +87,8 @@ References and Practice to help you master this module.
   - [javascript.info](https://javascript.info/async)
   - MDN: [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), [Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
   - HYF ... [AMS](https://github.com/HackYourFuture/JavaScript3/), [CPH](https://github.com/HackYourFuture-CPH/JavaScript/tree/master/javascript3)
-<<<<<<< HEAD
   - [Async/Await - FunFunFunction](https://www.youtube.com/watch?v=568g8hxJJp4)
   - [`return await` (advanced)](https://stackoverflow.com/questions/38708550/difference-between-return-await-promise-and-return-promise)
-=======
->>>>>>> 02-fetch integrate
 - Practice
   - [learn-promises](https://github.com/oliverjam/learn-promises)
   - [promise-practice](https://github.com/oliverjam/promise-practice)
@@ -245,10 +238,7 @@ Promises & `fetch`
 - APIs & REST
   - [Restful Routes?](https://medium.com/@atingenkay/restful-routes-what-are-they-8fe221521bb)
   - JSON Placeholder:[live](https://jsonplaceholder.typicode.com/guide.html), [more docs](https://github.com/typicode/json-server)
-<<<<<<< HEAD
   - [Presentation - Javascript Fetch and REST API](./slides/fetch-and-rest-api.html)
-=======
->>>>>>> 02-fetch integrate
 - **DevTools**, the Network Tab:
   - [chrome/ium](https://developers.google.com/web/tools/chrome-devtools/network/)
   - [firefox](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor)
@@ -276,11 +266,7 @@ Promises & `fetch`
 
 _individual project_
 
-<<<<<<< HEAD
 You've made it this far, time to show off a bit!  Build yourself a sick portfolio to showcase all of your work so far.  Using the [GitHub API](https://docs.github.com/en/free-pro-team@latest/rest) gather stats, links and collaborators to showcase your best work. Here is a [boilerplate repository](https://github.com/HackYourFutureBelgium/starter-basic-import-export), and a [helpful tutorial](https://www.youtube.com/watch?v=5QlE6o-iYcE) to get you rolling (hint: avoid pushing your GitHub auth token!).
-=======
-You've made it this far, time to show off a bit!  Build yourself a sick portfolio to showcase all of your work so far.  Using the GitHub API gather stats, links and collaborators to showcase your best work. Here is a [boilerplate repository](https://github.com/HackYourFutureBelgium/starter-basic-import-export), and a [helpful tutorial](https://www.youtube.com/watch?v=5QlE6o-iYcE) to get you rolling (hint: avoid pushing your GitHub auth token!).
->>>>>>> 02-fetch integrate
 
 #### Checklist
 
@@ -320,7 +306,6 @@ Looking for an extra challenge? Try to implement these concepts:
 
 > before class
 
-<<<<<<< HEAD
 - `async`/`await`
   - Coding Train: [pt 1](https://www.youtube.com/watch?v=XO77Fib9tSI), [pt 2](https://www.youtube.com/watch?v=chavThlNz3s&feature=emb_rel_pause)
   - [FunFunFunction](https://www.youtube.com/watch?v=568g8hxJJp4)
@@ -329,10 +314,6 @@ Looking for an extra challenge? Try to implement these concepts:
 - [isolate](./isolate/index.html)
   - 6. `await` vs. `then`
   - 7. `async`/`await` - `fetch` (examples)
-=======
-- [isolate](./isolate/index.html)
-  - 5. `async`/`await`
->>>>>>> 02-fetch integrate
 
 ### Lesson Plan
 
@@ -341,7 +322,6 @@ Looking for an extra challenge? Try to implement these concepts:
 #### Before Break
 
 - [isolate](./isolate/index.html)
-<<<<<<< HEAD
   - 7. `async`/`await` - `fetch` (exercises)
   - 8. `async`/`await` - `fetch` REST
 
@@ -349,18 +329,11 @@ Looking for an extra challenge? Try to implement these concepts:
 
 - [integrate](./integrate/README.md)
   - 3. `async`/`await` refactor
-=======
-  - 6. `fetch` with `async`/`await`
-
-#### After Break
-
->>>>>>> 02-fetch integrate
 
 ### Project
 
 > after class
 
-<<<<<<< HEAD
 Remember todo lists?  Here's another to add to yours :) There are more detailed instructions in `INSTRUCTIONS.md`
 
 - [restful-pjs](https://github.com/HackYourFutureBelgium/restful-pjs).
@@ -385,17 +358,6 @@ Remember todo lists?  Here's another to add to yours :) There are more detailed 
 #### Deployment (challenge)
 
 Because this project has a backend it's not possible to deploy it with GitHub Pages. Choose one person in your group to be responsible for _dev-ops_ and _deployment_.  There's more info on deployment in the starter repository.
-=======
-[restful-pjs](https://github.com/HackYourFutureBelgium/restful-pjs). to study - [this-to-fetch](https://github.com/hackyourfuturebelgium/this-to-fetch-example)
-
-
-### Deployment
-
-Because this project has a backend it's not possible to deploy it with GitHub Pages. Choose one person in your group to be responsible for _dev-ops_ and _deployment_. We have provided a GitHub action to deploy to heroku, someone in your group needs to make sure it's working correctly:
-
-* [FCC Article](https://www.freecodecamp.org/news/how-to-deploy-a-nodejs-app-to-heroku-from-github-without-installing-heroku-on-your-machine-433bec770efe/)
-* [Heroku CI](https://www.heroku.com/continuous-integration)
->>>>>>> 02-fetch integrate
 
 </details>
 
@@ -439,10 +401,7 @@ Because this project has a backend it's not possible to deploy it with GitHub Pa
     - Part 2: [Integrate - Event Loop](https://vimeo.com/460082162)
     - Part 3: [Recap & Project Intro](https://vimeo.com/460082763)
 
-<<<<<<< HEAD
 1. week 2:
     - Part 1: [Isolate - Fetch & REST](https://vimeo.com/462531506)
     - Part 2: [Integrate - Fetch & REST](https://vimeo.com/462536889)
 
-=======
->>>>>>> 02-fetch integrate
