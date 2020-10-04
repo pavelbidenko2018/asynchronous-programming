@@ -183,11 +183,10 @@
           "path": "/01-synchronous-delays.js"
         },
         {
-<<<<<<< HEAD
           "path": "/02-asynchronous-delays.js"
-=======
+        },
+        {
           "path": "/02-asynchronous-scheduling.js"
->>>>>>> 02-fetch integrate
         },
         {
           "path": "/03-async-before-sync.js"
@@ -363,7 +362,6 @@
           ]
         }
       ]
-<<<<<<< HEAD
     },
     {
       "path": "/06-await-vs-then",
@@ -491,8 +489,6 @@
           ]
         }
       ]
-=======
->>>>>>> 02-fetch integrate
     }
   ],
   "config": {

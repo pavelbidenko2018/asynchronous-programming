@@ -11,15 +11,6 @@ log('path: ', path);
 
 
 const parseResponse = (response) => {
-<<<<<<< HEAD
-  log('response: ', response);
-  return response.json();
-};
-
-const processData = (data) => {
-  log('data: ', data);
-  // write the rest ...
-=======
     log('response: ', response);
     return response.json();
 };
@@ -35,21 +26,10 @@ const processData = (data) => {
     }
 
     return null;
->>>>>>> 02-fetch integrate
 
 };
 
 const testData = (actual) => {
-<<<<<<< HEAD
-  log('actual: ', actual);
-  it('should have the correct title', () => {
-    expect(actual.title).to.equal('error magni fugiat dolorem impedit molestiae illo ullam debitis');
-  });
-};
-
-const handleRejection = (err) => {
-  log(err);
-=======
     log('actual: ', actual);
     it('should have the correct title', () => {
         expect(actual.title).to.equal('error magni fugiat dolorem impedit molestiae illo ullam debitis');
@@ -58,22 +38,11 @@ const handleRejection = (err) => {
 
 const handleRejection = (err) => {
     log(err);
->>>>>>> 02-fetch integrate
 };
 
 
 
 fetch(origin + path)
-<<<<<<< HEAD
-  .then(res => parseResponse(res))
-  .then(data => processData(data))
-  .then(processedData => testData(processedData))
-  .catch(err => handleRejection(err));
-
-
-
-log('end of synchronous tasks');
-=======
     .then(parseResponse)
     .then(processData)
     .then(testData)
@@ -82,4 +51,3 @@ log('end of synchronous tasks');
 
 
 log('end of synchronous tasks');
->>>>>>> 02-fetch integrate
